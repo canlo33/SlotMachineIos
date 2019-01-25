@@ -64,9 +64,8 @@
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VcI-6s-lH0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhL-IZ-2Al">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhL-IZ-2Al">
                                 <rect key="frame" x="112" y="542" width="151" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="PLAY AGAIN"/>
                                 <connections>
@@ -77,6 +76,7 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jhL-IZ-2Al" firstAttribute="leading" secondItem="Dlp-ZB-Ytw" secondAttribute="leading" id="19D-LL-KeS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dlp-ZB-Ytw" secondAttribute="bottom" constant="151" id="3oK-eo-5vN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dlp-ZB-Ytw" secondAttribute="trailing" constant="112" id="4lx-dM-RXc"/>
                             <constraint firstItem="7zt-tj-PS4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="8N0-ZS-qct"/>
@@ -88,6 +88,7 @@
                             <constraint firstItem="7zt-tj-PS4" firstAttribute="centerX" secondItem="g39-zD-BJs" secondAttribute="centerX" id="RU6-ql-wac"/>
                             <constraint firstItem="PlV-9g-P3g" firstAttribute="leading" secondItem="hJ7-Jw-shY" secondAttribute="trailing" constant="21" id="SS4-q6-RgO"/>
                             <constraint firstItem="g39-zD-BJs" firstAttribute="top" secondItem="7zt-tj-PS4" secondAttribute="bottom" constant="76" id="TEO-bM-xtd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jhL-IZ-2Al" secondAttribute="bottom" constant="75" id="U2i-f6-YEr"/>
                             <constraint firstItem="hJ7-Jw-shY" firstAttribute="top" secondItem="g39-zD-BJs" secondAttribute="bottom" constant="56" id="Vde-dX-4sd"/>
                             <constraint firstItem="g39-zD-BJs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="fm8-w6-GjG"/>
                             <constraint firstItem="7zt-tj-PS4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="go9-Nw-WaT"/>
@@ -95,6 +96,8 @@
                             <constraint firstItem="Dlp-ZB-Ytw" firstAttribute="top" secondItem="hJ7-Jw-shY" secondAttribute="bottom" constant="77" id="ppx-o1-FV7"/>
                             <constraint firstItem="hJ7-Jw-shY" firstAttribute="baseline" secondItem="PlV-9g-P3g" secondAttribute="baseline" id="w3e-Vk-av8"/>
                             <constraint firstItem="g39-zD-BJs" firstAttribute="leading" secondItem="hJ7-Jw-shY" secondAttribute="leading" id="wSG-my-aeg"/>
+                            <constraint firstItem="jhL-IZ-2Al" firstAttribute="top" secondItem="Dlp-ZB-Ytw" secondAttribute="bottom" constant="26" id="wkv-OV-kPa"/>
+                            <constraint firstItem="jhL-IZ-2Al" firstAttribute="trailing" secondItem="Dlp-ZB-Ytw" secondAttribute="trailing" id="xME-IQ-82y"/>
                             <constraint firstItem="hJ7-Jw-shY" firstAttribute="firstBaseline" secondItem="PlV-9g-P3g" secondAttribute="firstBaseline" id="zJ1-oG-1ZP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

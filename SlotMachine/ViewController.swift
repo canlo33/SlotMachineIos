@@ -38,11 +38,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
                       "🐮".emojiToImage()!,
                       "🐼".emojiToImage()!,
                       "🐔".emojiToImage()!,
-                      "🎅".emojiToImage()!,
-                      "🚍".emojiToImage()!,
-                      "💖".emojiToImage()!,
-                      "👑".emojiToImage()!,
-                      "👻".emojiToImage()!]
+                      "🎅".emojiToImage()!]
         
         showResult.text = ""
         moneyWon.text = "0"
@@ -70,17 +66,17 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
         
             pickerView.selectRow(newValue, inComponent: i, animated: true)
             pickerView.reloadComponent(i)
-            ownnedMoney = ownnedMoney - 40
+            ownnedMoney = ownnedMoney - 100
             ownMoney.text = String(ownnedMoney)
             if numInRow >= 3{
-                winnedMoney = winnedMoney + 2000
-                ownnedMoney = ownnedMoney + 2000
+                winnedMoney = winnedMoney + 1000
+                ownnedMoney = ownnedMoney + 1000
                 moneyWon.text = String(winnedMoney)
                 ownMoney.text = String(ownnedMoney)
                 win = true
             }
     }
-        showResult.text = win ? "You Won!!!!" : ""
+        showResult.text = win ? "WooHoo You Won!!!!" : ""
         if ownnedMoney == 0{
             showResult.text = "Loser Hahaha"
         }
