@@ -57,11 +57,20 @@
                                     <constraint firstAttribute="height" constant="47" id="ZtS-oZ-tUI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="PLAY">
+                                <state key="normal" title="SPIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VcI-6s-lH0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhL-IZ-2Al">
+                                <rect key="frame" x="112" y="542" width="151" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="PLAY AGAIN"/>
+                                <connections>
+                                    <action selector="PlayAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3c-wI-SXr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="134"/>
+            <point key="canvasLocation" x="1389.5999999999999" y="133.5832083958021"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="DSX-71-aaq">

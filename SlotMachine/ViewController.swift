@@ -32,7 +32,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         
         
-
+        
         imageArray = ["🍎".emojiToImage()!,
                       "😍".emojiToImage()!,
                       "🐮".emojiToImage()!,
@@ -43,11 +43,11 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
                       "💖".emojiToImage()!,
                       "👑".emojiToImage()!,
                       "👻".emojiToImage()!]
-
+        
         showResult.text = ""
         moneyWon.text = "0"
         ownMoney.text = "6000"
-      
+        
         arc4random_stir()
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -82,7 +82,7 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
     }
         showResult.text = win ? "You Won!!!!" : ""
         if ownnedMoney == 0{
-            showResult.text = "You Lose!"
+            showResult.text = "Loser Hahaha"
         }
     }
     }
@@ -113,7 +113,17 @@ class ViewController: UIViewController ,UIPickerViewDelegate, UIPickerViewDataSo
         return imageView
     }
     
-
+    @IBAction func PlayAgain(_ sender: UIButton) {
+        
+        showResult.text = ""
+        moneyWon.text = "0"
+        ownMoney.text = "6000"
+        
+        arc4random_stir()
+        pickerView.delegate = self
+        
+    }
+    
     
 
     
