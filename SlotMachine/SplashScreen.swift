@@ -12,6 +12,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Change the screen after 3 secs
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             self.performSegue(withIdentifier: "nextScreen", sender: nil)
         }
